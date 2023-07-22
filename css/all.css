@@ -1,0 +1,350 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+@import url("https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&display=swap");
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.black {
+  color: #000;
+}
+
+.white {
+  color: #fff;
+}
+
+.light-gray {
+  color: #E3E3E3;
+}
+
+.gray {
+  color: #D1D1D1;
+}
+
+.dark-gray {
+  color: #15161D;
+}
+
+.primary {
+  color: #00FFA3;
+}
+
+.bg-white {
+  background-color: #fff;
+}
+
+.h1 {
+  font-size: 128px;
+}
+
+.h2 {
+  font-size: 64px;
+}
+
+.h3 {
+  font-size: 24px;
+}
+
+.h4 {
+  font-size: 20px;
+}
+
+.h5 {
+  font-size: 16px;
+}
+
+.ta-start {
+  text-align: left;
+}
+
+.mb-16 {
+  margin-bottom: 16px;
+}
+
+.mb-24 {
+  margin-bottom: 24px;
+}
+
+.mb-32 {
+  margin-bottom: 32px;
+}
+
+.mb-36 {
+  margin-bottom: 36px;
+}
+
+.d-block {
+  display: block;
+}
+
+.d-flex {
+  display: flex;
+  gap: 24px;
+}
+
+.btn {
+  padding: 12px 24px;
+  border-radius: 32px;
+}
+
+.btn-white {
+  color: #000;
+  background-color: #fff;
+}
+
+.btn-black {
+  color: #fff;
+  background-color: #000;
+}
+
+.btn-icon-black {
+  display: inline-block;
+  vertical-align: middle;
+  width: 24px;
+  height: 24px;
+  background: url(../images/arrow_outward.png) no-repeat;
+  background-size: contain;
+}
+
+.btn-icon-white {
+  display: inline-block;
+  vertical-align: middle;
+  width: 24px;
+  height: 24px;
+  background: url(../images/arrow_outward-white.png) no-repeat;
+  background-size: contain;
+}
+
+.container {
+  max-width: 1296px;
+  margin: 0 auto;
+}
+
+.w-50 {
+  width: calc(50% - 12px);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+}
+
+a {
+  display: inline-block;
+  text-decoration: none;
+  color: #000;
+  transition: all 0.3s ease-in-out;
+}
+a:hover {
+  opacity: 0.8;
+}
+
+body {
+  font-family: "Bruno Ace SC", cursive, sans-serif;
+  line-height: 1.5;
+  color: #fff;
+  background: #000;
+  padding-top: 40px;
+}
+
+.navMenu {
+  justify-content: space-between;
+}
+
+.banner {
+  padding-top: 72px;
+  padding-bottom: 72px;
+  align-items: center;
+}
+.bannerCopy {
+  text-align: right;
+}
+
+.intro {
+  padding-top: 160px;
+  padding-bottom: 160px;
+  background: url(../images/background-img.png) no-repeat center center;
+  background-size: cover;
+}
+.intro .deco {
+  gap: 16px;
+}
+.intro .deco-1, .intro .deco-2, .intro .deco-3 {
+  width: 32px;
+  height: 98px;
+  background: url(../images/sparkle-sm.png) no-repeat;
+  background-size: contain;
+}
+.introImg-1, .introImg-2 {
+  width: 196px;
+}
+.introImg-3 {
+  width: 306px;
+}
+
+.about {
+  padding-top: 160px;
+  padding-bottom: 160px;
+}
+.aboutWrapper {
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  align-items: center;
+}
+.aboutTitle {
+  width: 526px;
+}
+.about .cardWrapper {
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.about .cardWrapper .card {
+  padding: 16px;
+  flex-direction: column;
+  gap: 4px;
+  border: 1px solid #E3E3E3;
+  box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.08);
+}
+
+.cta {
+  padding-top: 96px;
+  padding-bottom: 96px;
+  background: linear-gradient(180deg, #050014 0%, rgba(1, 2, 30, 0.89) 100%);
+}
+.ctaWrapper {
+  align-items: center;
+  gap: 0;
+}
+.ctaWrapper h3 {
+  margin-right: 16px;
+}
+.ctaIcon {
+  width: 100px;
+  height: 100px;
+  background: url(../images/trending_flat_black_24dp\ 1.png) no-repeat;
+  background-size: contain;
+  margin-right: 113px;
+}
+.cta .social {
+  gap: 20px;
+}
+.cta .socialItem {
+  width: 162px;
+  height: 162px;
+  border-radius: 40px;
+}
+.cta .socialItem:hover {
+  box-shadow: 0px 0px 16px 3px rgba(144, 148, 255, 0.9), 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+.cta .socialLink-1 {
+  width: 162px;
+  height: 162px;
+  border-radius: 40px;
+  background: url(../images/discord.jpeg) no-repeat center;
+  background-size: cover;
+}
+.cta .socialLink-2 {
+  width: 162px;
+  height: 162px;
+  border-radius: 40px;
+  background: url(../images/instagram.jpeg) no-repeat center;
+  background-size: cover;
+}
+.cta .socialLink-3 {
+  width: 162px;
+  height: 162px;
+  border-radius: 40px;
+  background: url(../images/message.jpeg) no-repeat center;
+  background-size: cover;
+}
+
+.project {
+  padding-top: 160px;
+  padding-bottom: 160px;
+}
+.project h3 {
+  padding-left: 550px;
+}
+.projectContent {
+  margin-bottom: 28px;
+}
+.projectContent p {
+  margin-bottom: 76px;
+}
+.project .projectImg-1 {
+  width: 416px;
+  height: 530px;
+}
+.project .projectImg-2 {
+  width: 196px;
+  height: 196px;
+}
+.project .projectImg-3 {
+  width: 306px;
+  height: 306px;
+}
+.project .projectImg-4 {
+  width: 526px;
+  height: 306px;
+}
+
+footer {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  text-align: center;
+}/*# sourceMappingURL=all.css.map */
